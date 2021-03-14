@@ -81,11 +81,11 @@ fieldset {
   width: 84%;
   margin: 20px 0;
 }
-/*fieldset > input + input{
+fieldset > input + input {
   margin-left: 10px;
-}*/
+}
 
-input[type="text"]{
+input[type="text"] {
   width: 50%;
 }
 
@@ -131,6 +131,8 @@ input[type="password"] {
 label a {
   text-decoration: none;
   color: var(--red-color);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 label a:visited {
@@ -141,6 +143,10 @@ label {
   display: flex;
   align-self: flex-start;
   margin: 20px 35px;
+}
+
+label input {
+  margin-right: 5px;
 }
 
 button {
@@ -167,8 +173,8 @@ button:active {
   font-size: 1.2em;
   font-style: inherit;
 }
-@media (max-width:480px){
-  fieldset{
+@media (max-width: 480px) {
+  fieldset {
     flex-direction: column;
     align-items: stretch;
     width: 320px;
@@ -176,9 +182,15 @@ button:active {
   }
 }
 
+@media (max-width: 480px) {
+  fieldset > input + input {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
 
-
-    
-  
-    
-  
+@media (max-width: 480px) {
+  label {
+    display: inline-block;
+  }
+}
