@@ -16,13 +16,13 @@
 body {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 section {
+  width: 80%;
+  max-width: 500px;
   background-color: var(--section-color);
-  width: 500px;
-  height: 500px;
   padding: 20px;
   border: 2px solid var(--black-color);
   text-align: center;
@@ -77,8 +77,13 @@ fieldset {
   padding: 0;
   border: none;
   display: flex;
-  width: 400px;
+  justify-content: space-between;
+  width: 84%;
+  margin: 20px 0;
 }
+/*fieldset > input + input{
+  margin-left: 10px;
+}*/
 
 input[type="text"]{
   width: 50%;
@@ -106,7 +111,7 @@ input:valid {
 
 input[type="text"] {
   display: inline-block;
-  margin: 30px 10px 20px;
+  /* margin: 30px 10px 20px; */
   padding: 10px 15px;
 }
 
@@ -162,5 +167,18 @@ button:active {
   font-size: 1.2em;
   font-style: inherit;
 }
+@media (max-width:480px){
+  fieldset{
+    flex-direction: column;
+    align-items: stretch;
+    width: 320px;
+    margin-left: 160px;
+  }
+}
 
 
+
+    
+  
+    
+  
